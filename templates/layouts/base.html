@@ -40,7 +40,10 @@
 
 <!-- Add your site or application content here -->
 <!-- Preloader Start Here -->
-<div id="preloader"></div>
+{% url 'pages:contact' as contact %}
+{% if request.path != contact %}
+    <div id="preloader"></div>
+{% endif %}
 <!-- Preloader End Here -->
 <!-- ScrollUp Start Here -->
 <a href="#wrapper" data-type="section-switch" class="scrollup">
@@ -79,6 +82,7 @@
 <script src="{% static 'js/smoothscroll.min.js' %}"></script>
 <!-- Custom Js -->
 <script src="{% static 'js/main.js' %}"></script>
+{% block extra_js %}{% endblock %}
 </body>
 
 </html>
