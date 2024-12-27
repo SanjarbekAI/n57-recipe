@@ -1,0 +1,168 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Inne Page Banner Area Start Here -->
+    <section class="inner-page-banner bg-common" data-bg-image="{% static 'img/figure/inner-page-banner1.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumbs-area">
+                        <h1>About Us</h1>
+                        <ul>
+                            <li>
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inne Page Banner Area End Here -->
+    <!-- Recipe With Sidebar Area Start Here -->
+    <section class="all-recipes-page-wrap padding-top-80 padding-bottom-50">
+        <div class="container">
+            <div class="row gutters-60">
+                <div class="col-lg-8">
+                    <div class="about-box">
+                        <div class="about-figure">
+                            <img src="{% static 'img/figure/about2.jpg' %}" alt="About">
+                        </div>
+                        <h2 class="about-title title-bar bar-center">Rosario Kareon</h2>
+                        <p class="item-description">More off this less hello salamander lied porpoise much over tightly
+                            circa horse taped so innocuously side crudey mightily rigorous plot life. New homes in
+                            particular are subject.All recipes created with FoodiePress have suport for Micoformats and
+                            Google Recipe View. Schema.org is a collaboration byo improve the web by creatinegaera
+                            structured data markupore off this less hello salamander lied
+                            porpoise much over tightlyapedey innocuouslylife.</p>
+                        <div class="section-heading heading-dark">
+                            <h2 class="item-heading">QUICK CONTACT ME</h2>
+                        </div>
+                        <form class="about-contact-form">
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <input type="text" placeholder="Name *" class="form-control" name="name"
+                                           data-error="Name field is required"
+                                           required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <input type="email" placeholder="E-mail *" class="form-control" name="email"
+                                           data-error="E-mail field is required"
+                                           required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <input type="text" placeholder="Phone *" class="form-control" name="phone"
+                                           data-error="Subject field is required" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="col-12 form-group">
+                                        <textarea placeholder="Message" class="textarea form-control" name="message"
+                                                  id="form-message"
+                                                  rows="7" cols="20" data-error="Message field is required"
+                                                  required></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="col-12 form-group mb-0 mt-3">
+                                    <button type="submit" class="item-btn">SEND MESSAGE</button>
+                                </div>
+                                <div class="form-response"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 sidebar-widget-area sidebar-break-md">
+                    <div class="widget">
+                        <div class="section-heading heading-dark">
+                            <h3 class="item-heading">SUBSCRIBE &amp; FOLLOW</h3>
+                        </div>
+                        <div class="widget-follow-us">
+                            <ul>
+                                <li class="single-item"><a href="#"><i class="fab fa-facebook-f"></i>LIKE ME ON</a></li>
+                                <li class="single-item"><a href="#"><i class="fab fa-twitter"></i>LIKE ME</a></li>
+                                <li class="single-item"><a href="#"><i class="fab fa-linkedin-in"></i>LIKE ME</a></li>
+                                <li class="single-item"><a href="#"><i class="fab fa-pinterest-p"></i>LIKE ME</a></li>
+                                <li class="single-item"><a href="#"><i class="fab fa-instagram"></i>LIKE ME</a></li>
+                                <li class="single-item"><a href="#"><i class="fab fa-youtube"></i>Subscribe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="section-heading heading-dark">
+                            <h3 class="item-heading">LATEST RECIPES</h3>
+                        </div>
+                        <div class="widget-latest">
+                            <ul class="block-list">
+                                <li class="single-item">
+                                    <div class="item-img">
+                                        <a href="#"><img src="{% static 'img/product/latest1.jpg' %}" alt="Post"></a>
+                                        <div class="count-number">1</div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-ctg">DESERT</div>
+                                        <h4 class="item-title"><a href="#">Salami Oven Roasted are
+                                            Mozzarella Oelette</a></h4>
+                                        <div class="item-post-by"><a href="../blogs/blog_detail.html"><i
+                                                class="fas fa-user"></i><span>by</span>
+                                            John Martin</a></div>
+                                    </div>
+                                </li>
+                                <li class="single-item">
+                                    <div class="item-img">
+                                        <a href="#"><img src="{% static 'img/product/latest2.jpg' %}" alt="Post"></a>
+                                        <div class="count-number">2</div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-ctg">DESERT</div>
+                                        <h4 class="item-title"><a href="#">Salami Oven Roasted are
+                                            Mozzarella Oelette</a></h4>
+                                        <div class="item-post-by"><a href="../blogs/blog_detail.html"><i
+                                                class="fas fa-user"></i><span>by</span>
+                                            John Martin</a></div>
+                                    </div>
+                                </li>
+                                <li class="single-item">
+                                    <div class="item-img">
+                                        <a href="#"><img src="{% static 'img/product/latest3.jpg' %}" alt="Post"></a>
+                                        <div class="count-number">3</div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-ctg">DESERT</div>
+                                        <h4 class="item-title"><a href="#">Salami Oven Roasted are
+                                            Mozzarella Oelette</a></h4>
+                                        <div class="item-post-by"><a href="../blogs/blog_detail.html"><i
+                                                class="fas fa-user"></i><span>by</span>
+                                            John Martin</a></div>
+                                    </div>
+                                </li>
+                                <li class="single-item">
+                                    <div class="item-img">
+                                        <a href="#"><img src="{% static 'img/product/latest4.jpg' %}" alt="Post"></a>
+                                        <div class="count-number">4</div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-ctg">DESERT</div>
+                                        <h4 class="item-title"><a href="#">Salami Oven Roasted are
+                                            Mozzarella Oelette</a></h4>
+                                        <div class="item-post-by"><a href="../blogs/blog_detail.html"><i
+                                                class="fas fa-user"></i><span>by</span>
+                                            John Martin</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-ad">
+                            <a href="#"><img src="{% static 'img/figure/figure4.jpg' %}" alt="Ad" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recipe With Sidebar Area End Here -->
+{% endblock %}
