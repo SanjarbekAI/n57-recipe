@@ -11,6 +11,7 @@ urlpatterns = [
     path('recipies/', recipies_page_view, name='recipies'),
     path('login/', login_page_view, name='login'),
     path('category/', category_page_view, name='category'),
+    path('blog/', blog_page_view, name='blog'),
     # path('shop/', about_page_view, name='about'),
     path('', home_page_view, name='home'),
 ]
