@@ -3,9 +3,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from app_form.views import test_form
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('common.urls', namespace='pages'))
+    path('form/', test_form, name='form'),
+    path('', include('pages.urls', namespace='pages')),
 ]
 
 if settings.DEBUG:

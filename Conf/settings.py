@@ -30,6 +30,8 @@ INSTALLED_APPS = [
 
     'common',
     'blogs',
+    'app_form',
+    'pages',
 ]
 
 MIDDLEWARE = [

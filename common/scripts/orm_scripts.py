@@ -1,44 +1,28 @@
-from blogs.models import BlogCategoryModel
+from blogs.models import BlogCategoryModel, BlogTagModel, BlogModel
 
-from django.db.models import Q
 
 def run():
-    # cat2 = BlogCategoryModel.objects.create(title='Blog category 2')
-    # cat2 = BlogCategoryModel(title='Blog category 2')
-    # cat2.save()
-
-    # BlogCategoryModel.objects.filter(id=1).update(title='nimadir')
-    # cat = BlogCategoryModel.objects.filter(id=1).update(title='nimadir')
-    # cat.title = 'Yangi title'
-    # cat.save()
-
-    # cat1 = BlogCategoryModel.objects.get(id=2)
-    # cat2 = BlogCategoryModel.objects.filter(id=2)
-    # print(
-    #     cat1, cat2
+    # tag = BlogTagModel.objects.create(title='tag')
+    # cat = BlogCategoryModel.objects.get(id=1)
+    #
+    # blog = BlogModel(
+    #     image1='',
+    #     image2='',
+    #     tags=tag,
+    #     categories=cat,
     # )
 
-    # "select * from blog_category"
-    # cats = BlogCategoryModel.objects.all()
-    # print(cats)
-
-    # "select title from blog_category"
-    # cats = BlogCategoryModel.objects.values('title')
-    # print(cats)
-
-    "select * from blog_Category id > 2"
     """
-    __gt > 
-    __gte >=
-    __lt <
-    __lte <=
-    __isnull
-    
-    
-    relationships, select_related, fetch_related | JOIN
-    aggrogate, annotate | avg, sum, max, min, len ...
-    
+    ProductsModel.objects.filter(category__id=1)
 
-    select * from bc where id=>1 and id<=100
+    product = ProductsModels.objects.get(id=1)
+    product.price = product.price * 1.1
+    product.save()
+
+    # ProductsModels.objects.aggrgate(Count('category')).values('id', 'categories__count')
+
+
+    aggregate and annotate in django
+    how to use OR in django | Q
+
     """
-

@@ -1,6 +1,12 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
 {% block content %}
+    {% for msg in messages %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Hey!</strong>{{ msg }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
     <section class="inner-page-banner bg-common" data-bg-image="{% static 'img/figure/inner-page-banner1.jpg' %}">
         <div class="container">
             <div class="row">
@@ -52,7 +58,8 @@
                 <div class="section-heading heading-dark">
                     <h3 class="item-heading-big">Send Us Message</h3>
                 </div>
-                <form id="contact-form" class="contact-form-box">
+                <form id="contact-form" class="contact-form-box" method="post" action="{% url 'pages:contact' %}">
+                    {% csrf_token %}
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <input type="text" placeholder="Name *" class="form-control" name="name"
