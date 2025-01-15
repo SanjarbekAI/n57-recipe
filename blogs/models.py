@@ -42,8 +42,8 @@ class BlogModel(BaseModel):
         return self.title
 
     class Meta:
-        verbose_name = "Blog tag"
-        verbose_name_plural = "Blog tags"
+        verbose_name = "Blog"
+        verbose_name_plural = "Blogs"
 
 
 class BlogCommentModel(BaseModel):

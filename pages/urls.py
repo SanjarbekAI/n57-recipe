@@ -1,6 +1,5 @@
 from django.urls import path
 
-from common.views import *
 from pages.views import contact_page_view, about_page_view, home_page_view
 
 app_name = 'pages'

@@ -12,7 +12,5 @@ class RegisterForm(UserCreationForm):
 
 
 class LoginForm(forms.Form):
-    email_or_username = forms.CharField(max_length=128)
+    email_or_username = forms.CharField(max_length=128, label="Email or Username")
     password = forms.CharField(max_length=128)
-
-
